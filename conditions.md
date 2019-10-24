@@ -1,8 +1,4 @@
----
-description: Snello - Smart New HEadLess LOvely CMS
----
-
-# Snello CMS
+# Conditions
 
 ## Getting Super Powers
 
