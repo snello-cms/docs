@@ -4,23 +4,23 @@ description: Snello - Smart New HEadLess LOvely CMS
 
 # Snello CMS
 
-## Getting Super Powers
+## Per cominciare ad usare SNELLO
 
 Becoming a super hero is a fairly straight forward process:
 
 ```
-$ give me super-powers
+$ docker run -t -i -p 8080:8080 snellocms/snello-all-in-one
 ```
 
 {% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
+ Open the browser on:  [http://localhost:8080/snello-admin](http://localhost:8080/snello-admin) 
+
+Using username: admin - password: admin to authenticate..
 {% endhint %}
 
-Once you're strong enough, save the world:
-
 ```
-// Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
+// For more info: 
+https://hub.docker.com/r/snellocms/snello-all-in-one
 ```
 
 

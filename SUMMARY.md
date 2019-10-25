@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Snello CMS](README.md)
+* [Using in Docker](using-in-docker.md)
 * [Metadata](metadata/README.md)
   * [UUIDs](metadata/uuids.md)
 * [Field Definitions](field-definitions/README.md)
@@ -14,4 +15,5 @@
 * [Links](links.md)
 * [Draggables](draggables.md)
 * [Droppables](droppables.md)
+* [Notes](notes.md)
 
