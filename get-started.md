@@ -1,5 +1,5 @@
 ---
-description: 5 minutes to start!
+description: How to start to use Snello in 10 steps.
 ---
 
 # Get Started
