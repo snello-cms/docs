@@ -1,27 +1,16 @@
 ---
-description: Snello - Smart New HEadLess LOvely CMS
+description: Snello - Smart New HEadless LOvely CMS
 ---
 
 # Snello CMS
 
-## Per cominciare ad usare SNELLO
+## Come nasce SNELLO
 
-Becoming a super hero is a fairly straight forward process:
+Una sfida tra programmatori e web developers!
 
-```
-$ docker run -t -i -p 8080:8080 snellocms/snello-all-in-one
-```
+## Con quali obiettivi
 
-{% hint style="info" %}
- Open the browser on:  [http://localhost:8080/snello-admin](http://localhost:8080/snello-admin) 
-
-Using username: admin - password: admin to authenticate..
-{% endhint %}
-
-```
-// For more info: 
-https://hub.docker.com/r/snellocms/snello-all-in-one
-```
+Testare nuovi framework \(java Micronaut\) e nuove tecniche di generazione dinamica dei form \(Angular &gt;2\)
 
 
 

@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Snello CMS](README.md)
+* [Get Started](get-started.md)
 * [Architecture](architecture.md)
 * [Docker Images](using-in-docker/README.md)
   * [Database](using-in-docker/database.md)
