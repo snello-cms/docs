@@ -4,13 +4,13 @@ description: Snello - Smart New HEadless LOvely CMS
 
 # Snello CMS
 
-## Come nasce SNELLO
+## How SNELLO is born
 
-Una sfida tra programmatori e web developers!
+PHP vs Java vs Angular 2: a challenge among webmasters!
 
-## Con quali obiettivi
+## Why create a NEW CMS in 2019?
 
-Testare nuovi framework \(java Micronaut\) e nuove tecniche di generazione dinamica dei form \(Angular &gt;2\)
+To test/try/taste new frameworks \(like  Micronaut in java without using Hibernate\) and how to generating dinamically forms in typescript \(Angular &gt;2\)
 
 
 
