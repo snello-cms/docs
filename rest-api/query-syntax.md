@@ -1,2 +1,2 @@
-# Query syntax
+# Query example
 
