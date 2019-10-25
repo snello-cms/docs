@@ -1,14 +1,23 @@
 ---
-description: >-
-  Lo strumento per gestire query usando i parametri in modo, diverso da quanto
-  spiegato nella sezione rest api
+description: The conditions aree the best way to define "custom queries".
 ---
 
 # Conditions
 
-## Getting Super Powers
+## Parameter conditions
 
-Becoming a super hero is a fairly straight forward process:
+You should define the conditions that will bypass the normal queries on metadata table. The conditions can be applied on different parameters in "and " or "or" combination.
+
+You can apply the conditions on parameters in some way:
+
+* \_nn
+* \_nie
+* \_gt
+* \_gte
+* \_lt
+* \_lte
+
+And you can mix the conditions using "&&" or "\|\|".
 
 ```
 $ give me super-powers
