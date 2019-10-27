@@ -35,6 +35,7 @@
 * [Draggables & Droppables](draggables/README.md)
   * [angular syntax](draggables/angular-syntax.md)
 * [Deploy in Production](deploy-in-production/README.md)
+  * [Let’s Encrypt](deploy-in-production/lets-encrypt.md)
   * [Remove Hashbang](deploy-in-production/remove-hashbang.md)
   * [Traefik](deploy-in-production/traefik.md)
   * [Rendertron](deploy-in-production/rendertron.md)
