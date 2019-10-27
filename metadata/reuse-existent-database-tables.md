@@ -1,2 +1,2 @@
-# Reuse existent database tables
+# To reuse existing database tables
 
