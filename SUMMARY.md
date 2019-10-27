@@ -2,7 +2,9 @@
 
 * [Snello CMS](README.md)
 * [Get Started](get-started.md)
-* [Architecture](architecture.md)
+* [Architecture](architecture/README.md)
+  * [Snello API](architecture/snello-api.md)
+  * [Snello ADMIN](architecture/snello-admin.md)
 * [Docker Images](using-in-docker/README.md)
   * [Database](using-in-docker/database.md)
   * [Storage](using-in-docker/storage.md)
