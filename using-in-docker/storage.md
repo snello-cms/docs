@@ -23,6 +23,7 @@ environment:
         MICRONAUT_S3_SECRETKEY: password
         MICRONAUT_S3_BUCKETNAME: bucket_name
         MICRONAUT_S3_REGION: us-east-1
+        MICRONAUT_S3_FOLDER: 'folder'
 ```
 
 
