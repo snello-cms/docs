@@ -2,7 +2,7 @@
 description: Strongly inspired from STRAPI.
 ---
 
-# Rest API
+# How to query using REST API
 
 ## All query parameter options
 
