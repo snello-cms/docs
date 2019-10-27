@@ -1,23 +1,12 @@
+---
+description: static pages in exposed path
+---
+
 # Public Data
 
-## Getting Super Powers
-
-Becoming a super hero is a fairly straight forward process:
+We use nginx image for html files and you can add your pages.
 
 ```
-$ give me super-powers
+/files/page1 => http://yourwebsite.io/page1
 ```
-
-{% hint style="info" %}
- Super-powers are granted randomly so please submit an issue if you're not happy with yours.
-{% endhint %}
-
-Once you're strong enough, save the world:
-
-```
-// Ain't no code for that yet, sorry
-echo 'You got to trust me on this, I saved the world'
-```
-
-
 
