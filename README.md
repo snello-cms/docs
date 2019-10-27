@@ -1,5 +1,5 @@
 ---
-description: Snello - Smart New HEadless LOvely CMS
+description: Snello - Smart New HEadLess LOvely CMS
 ---
 
 # Snello CMS

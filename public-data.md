@@ -2,7 +2,7 @@
 description: static pages in exposed path
 ---
 
-# Public Data
+# How to publish your web pages
 
 We use nginx image for html files and you can add your pages.
 
