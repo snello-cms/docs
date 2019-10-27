@@ -9,11 +9,13 @@ The path to download the files, using the REST api, will be:
 * host://
 * website.it
 * :port
-* /snello-api/documents/
+* /api/documents/
 * {uuid}
 * /download
 
+For example:
+
 ```text
-http://localhost/snello-api/api/documents/f6978b5a-e2ba-4991-8c66-0e0f803b9f87/download
+http://localhost/api/documents/f6978b5a-e2ba-4991-8c66-0e0f803b9f87/download
 ```
 
