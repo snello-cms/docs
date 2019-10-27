@@ -26,4 +26,23 @@ To understand the snello behavior, we will use an example.
 * name \[string\]
 * surname \[string\]
 * courses  \[multijoin -&gt; courses\]
+  * Join Table Name: courses
+  * Join Table Key: uuid
+  * Join Table Fields: name
+
+### 3\) snello magic: join table and condition
+
+When you save \(in sequence\) courses and students.
+
+* courses table
+* students table
+* join table: courses\_students
+
+A "condition", to map the relationship between tables.
+
+### 4\) rest api
+
+* /api/courses
+* /api/students
+* /api/students/:id/courses
 
