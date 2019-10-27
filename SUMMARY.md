@@ -35,6 +35,7 @@
   * [angular syntax](draggables/angular-syntax.md)
 * [Notes](notes/README.md)
   * [Micronaut - create extensions](notes/micronaut-create-extensions.md)
+  * [Native image](notes/native-image.md)
   * [Editor for code](notes/editor-for-code.md)
   * [Multi languages](notes/multi-languages.md)
 * [Developers Space](developers-space/README.md)
