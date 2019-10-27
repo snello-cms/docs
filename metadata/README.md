@@ -1,32 +1,37 @@
+---
+description: The core of Snello!
+---
+
 # Metadata
 
-uuid: string; 
+The **metadata** is the join between database and api.  Snello can:
 
-table\_name: string; 
+* create a new table for you
+* use an existent table in the database.
 
-select\_fields: string; 
+**The required field:**
 
-search\_fields: string; 
+* label - table name
+* description
+* icon
 
-description: string; 
+**It's a new Table? YES**
 
-alias\_table: string; 
+* Table key
+* Table key type \(uuid, slug, auto increment\)
 
-alias\_condition: string; 
+**It's a new Table? NO**
 
-table\_key: string; 
+* Select Fields 
+* Search Fields 
+* Alias table 
+* Alias condition
+*  Table key
+* _Table key Type_
 
-creation\_query: string; 
+**Advanced Options?**
 
-order\_by: string;
-
-table\_key\_type: string; 
-
-table\_key\_addition: string;
-
-icon: string; 
-
-tab\_groups: string; 
-
-already\_exist: boolean;
+* Creation query
+* Tab & Groups
+* Order By
 
