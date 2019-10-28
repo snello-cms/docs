@@ -46,6 +46,7 @@
   * [Native image](notes/native-image.md)
   * [Editor for code](notes/editor-for-code.md)
   * [Multi languages](notes/multi-languages.md)
+* [k8s cache distributed](k8s-cache-distributed.md)
 * [Developers Space](developers-space/README.md)
   * [Java code](developers-space/java-code.md)
   * [Angular code](developers-space/angular-code.md)
