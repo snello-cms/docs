@@ -8,7 +8,7 @@ description: Snello - Smart New HEadLess LOvely CMS
 
 PHP vs Java vs Angular 2: a challenge among webmasters!   
 Strapi strongly inspired: we are java developers! we can make betters on server side performance.  
-RESTQL vs GraphQL: More options on traditional REST frameworks.
+RESTQL vs GraphQL: More options of traditional REST frameworks.
 
 We are professional developers: all open source projects are born to following some ideas. Also in SNELLO, we are testing/trying/tasting new frameworks \(like  Micronaut in java, pure persistence of data without using Hibernate\) and how to generating dynamically forms in typescript \(Angular 8\)
 
