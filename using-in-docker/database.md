@@ -1,48 +1,37 @@
 ---
-description: 'H2, Myql, Postgresql'
+description: 'H2, Myql, Postgresql. Select the db that you will use with:'
 ---
 
 # Database
 
-with postgresql:
-
-```text
-environment:
-      JDBC_HOST: postgresql
-      JDBC_TYPE: postgresql
-      JDBC_PORT: 5432
-      JDBC_DB: snello
-      JDBC_USERNAME: snello
-      JDBC_PASSWORD: xxxx
-      JDBC_DRIVER: org.postgresql.Driver
-      MICRONAUT_DB_TYPE: postgresql
+```
+//use mysql or postgresql or h2
+snello.dbtype=xxxxxx
 ```
 
-with mysql:
-
-```text
-environment:
-      JDBC_HOST: mysql
-      JDBC_TYPE: mysql
-      JDBC_PORT: 3306
-      JDBC_DB: snello
-      JDBC_USERNAME: snello
-      JDBC_PASSWORD: xxxx
-      JDBC_DRIVER: com.mysql.cj.jdbc.Driver
-      MICRONAUT_DB_TYPE: mysql
 ```
+quarkus.datasource.mysql.db-kind=mysql
+quarkus.datasource.mysql.username=snello
+quarkus.datasource.mysql.password=snello
+quarkus.datasource.mysql.jdbc.url=jdbc:mysql://localhost:3306/snello
+quarkus.datasource.mysql.jdbc.min-size=1
+quarkus.datasource.mysql.jdbc.max-size=5
+quarkus.datasource.mysql.jdbc=true
 
-with h2:
 
-```text
-environment:
-      JDBC_HOST: h2
-      JDBC_TYPE: h2
-      JDBC_PATH: 3306
-      JDBC_DB: ./db/repository
-      JDBC_USERNAME: sa
-      JDBC_PASSWORD: ''
-      JDBC_DRIVER: org.h2.Driver
-      MICRONAUT_DB_TYPE: h2
+quarkus.datasource.postgresql.db-kind=postgresql
+quarkus.datasource.postgresql.username=snello
+quarkus.datasource.postgresql.password=snello
+quarkus.datasource.postgresql.jdbc.url=jdbc:postgresql://localhost:5432/snello
+quarkus.datasource.postgresql.jdbc.min-size=1
+quarkus.datasource.postgresql.jdbc.max-size=5
+quarkus.datasource.postgresql.jdbc=true
+
+quarkus.datasource.h2.db-kind=h2
+quarkus.datasource.h2.username=sa
+quarkus.datasource.h2.password=
+quarkus.datasource.h2.jdbc.url=jdbc:h2:file:../src/main/resources/data/database;AUTO_SERVER=true;DB_CLOSE_DELAY=-1;MODE=MySQL;IGNORECASE=TRUE;DATABASE_TO_LOWER=TRUE;CASE_INSENSITIVE_IDENTIFIERS=TRUE
+quarkus.datasource.h2.jdbc.min-size=1
+quarkus.datasource.h2.jdbc.max-size=5
+quarkus.datasource.h2.jdbc=true
 ```
-

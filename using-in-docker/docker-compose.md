@@ -1,59 +1,59 @@
 ---
-description: Example of complete docker-compose
+description: 'Example of complete docker-compose:'
 ---
 
 # Docker compose
 
-```text
-version: '3'
+snello docker-compose.yml
+
+```
 services:
-  pgadmin4:
-    image: dpage/pgadmin4
-    expose:
-      - "80"
-    ports:
-      - '5050:80'
-    environment:
-       PGADMIN_DEFAULT_EMAIL: xxxx
-       PGADMIN_DEFAULT_PASSWORD: xxxxx
   snello-api:
     restart: always
-    image: snellocms/snello-api:latest
-    ports:
-      - "8080:8080"
+    image: snellocms/snello-api-quarkus:5.0.0
     environment:
-      JDBC_HOST: host
-      JDBC_TYPE: postgresql
-      JDBC_PORT: 3456
-      JDBC_DB: snello
-      JDBC_USERNAME: snello
-      JDBC_PASSWORD: snello
-      JDBC_DRIVER: org.postgresql.Driver
-      MICRONAUT_DB_TYPE: postgresql
-      MICRONAUT_STORAGE_TYPE: s3
-      MICRONAUT_S3_ENDPOINT: https://minio.io
-      MICRONAUT_S3_ACCESSKEY: xxxx
-      MICRONAUT_S3_SECRETKEY: xxxx
-      MICRONAUT_S3_BUCKETNAME: snello
-      MICRONAUT_S3_REGION: us-east-1
-      WEB_PATH: "/home/snello/files/"
+      SNELLO_DBTYPE: postgresql
+      QUARKUS_DATASOURCE_POSTGRESQL_USERNAME: user
+      QUARKUS_DATASOURCE_POSTGRESQL_PASSWORD: password
+      QUARKUS_DATASOURCE_POSTGRESQL_JDBC_URL: jdbc:postgresql://postgres:5432/snello
+      QUARKUS_MINIO_HOST: minio
+      QUARKUS_MINIO_PORT: 9000
+      QUARKUS_MINIO_SECURE: false
+      QUARKUS_MINIO_ACCESS_KEY: minio@xxx.it
+      QUARKUS_MINIO_SECRET_KEY: xxxxxxxxx
+      SNELLO_STORAGETYPE: s3
+      SNELLO_S3_FOLDER: inline_help
+      SNELLO_S3_BUCKETNAME: snello
+      QUARKUS_OIDC_AUTH_SERVER_URL: https://sso.xxx.it/realms/xxxx
+      QUARKUS_OIDC_CLIENT_ID: snello-api
       TZ: "Europe/Rome"
-  minio:
-    image: minio/minio
-    ports:
-      - "9001:9000"
-    environment:
-      MINIO_ACCESS_KEY: xxx
-      MINIO_SECRET_KEY: xxxxx
-    command: server /data
+    labels:
+      - "traefik.backend=snello-api"
+      - "traefik.enable=true"
+      - "traefik.frontend.rule=Host:kayak.love;PathPrefix:/api;"
+      - "traefik.frontend.priority=80"
+      - "traefik.docker.network=web"
+      - "traefik.port=8080"
+      - "com.centurylinklabs.watchtower.enable=true"
+    networks:
+      - web
   snello-admin:
     restart: always
-    image: snellocms/snello-admin:latest
+    image: snellocms/snello-admin:3.0.0
     volumes:
       - ./config-snello-admin.json:/usr/share/nginx/html/snello-admin/assets/config.json
     depends_on:
       - snello-api
-
-
+    labels:
+      - "traefik.backend=snello-admin"
+      - "traefik.enable=true"
+      - "traefik.frontend.rule=Host:kayak.love;PathPrefix:/snello-admin;"
+      - "traefik.frontend.priority=50"
+      - "traefik.docker.network=web"
+      - "com.centurylinklabs.watchtower.enable=true"
+    networks:
+      - web
+networks:
+  web:
+    external: true
 ```
-

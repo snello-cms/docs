@@ -15,26 +15,17 @@ https://hub.docker.com/u/snellocms
 In three flavors:
 
 {% hint style="info" %}
- Snello API
+Snello API
 {% endhint %}
 
-```text
-docker pull snellocms/snello-api
+```
+docker pull snellocms/snello-api-quarkus:5.0.0
 ```
 
 {% hint style="success" %}
 Snello Admin
 {% endhint %}
 
-```text
+```
 docker pull snellocms/snello-admin
 ```
-
-{% hint style="danger" %}
-Snello All in One
-{% endhint %}
-
-```text
- docker pull snellocms/snello-all-in-one
-```
-

@@ -1,12 +1,9 @@
 ---
-description: static pages in exposed path
+description: we will use qute syntax
 ---
 
-# How to publish your web pages
-
-We use nginx image for html files and you can add your pages.
+# How to publish your static web pages
 
 ```
-/files/page1 => http://yourwebsite.io/page1
+page1 => http://yourwebsite.io/p/page1
 ```
-
