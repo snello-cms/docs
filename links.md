@@ -6,7 +6,7 @@ description: >-
 
 # Links
 
-```text
+```
     name: string;
     labels: string;
     metadata_name: string;
@@ -18,3 +18,18 @@ description: >-
     created: boolean;
 ```
 
+In the following block, you can find a typical usecase:
+
+```
+ 
+- name: languages
+- labels: IT, EN, FRA, DE
+- metadata_name: news
+- metadata_key: news.uuid
+- metadata_searchable_field: news.title
+- metadata_lock_field: news.lang=label
+=> verra' generata il metadato:
+- metadata_generated_uuid - es languages.uuid=label
+```
+
+*
